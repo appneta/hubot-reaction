@@ -1,22 +1,23 @@
 # Description
 #   Make hubot react in a hilarious way!
 #
-# Configuration:
-#   LIST_OF_ENV_VARS_TO_SET
+# Dependencies
+#   None
 #
-# Commands:
-#   hubot hello - <what the respond trigger does>
-#   orly - <what the hear trigger does>
+# Configuration:
+#   HUBOT_REACTION_ENV
+#
+#   HUBOT_REACTION_ENV should be in JSON i.e. '{ "foo": "deploy-foo" }'
 #
 # Notes:
-#   <optional notes required for the script>
+#   None
 #
 # Author:
-#   Dan Riti[@<org>]
+#   danriti
+
+REACTIONS = JSON.parse process.env.HUBOT_REACTION_ENV
 
 module.exports = (robot) ->
-  robot.respond /hello/, (msg) ->
-    msg.reply "hello!"
-
-  robot.hear /orly/, ->
-    msg.send "yarly"
+  for key, value of REACTIONS
+    robot.hear RegExp(key), (msg) ->
+      msg.send value
