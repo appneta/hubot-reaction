@@ -1,6 +1,6 @@
-# Hubot: hubot-reaction
+# Hubot Reaction
 
-Make hubot react in a hilarious way!
+Make Hubot automatically react to specific chat room text!
 
 See [`src/reaction.coffee`](src/reaction.coffee) for full documentation.
 
