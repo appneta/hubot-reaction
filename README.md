@@ -2,11 +2,13 @@
 
 Make hubot react in a hilarious way!
 
-See [`src/hello-world.coffee`](src/hello-world.coffee) for full documentation.
+See [`src/reaction.coffee`](src/reaction.coffee) for full documentation.
 
 ## Sample Interaction
 
+If you set the following environment variable: `HUBOT_REACTION_ENV='{"lol":"Hilarious!"}'`:
+
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> lol
+hubot>> Hilarious!
 ```
