@@ -1,6 +1,6 @@
 {
   "name": "hubot-reaction",
-  "description": "Make hubot react in a hilarious way!",
+  "description": "Make Hubot react in a hilarious way!",
   "version": "0.0.0",
   "author": "Dan Riti <dmriti@gmail.com>",
   "license": "MIT",
@@ -9,11 +9,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-example.git"
+    "url": "git://github.com/appneta/hubot-reaction.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-example/issues"
+    "url": "https://github.com/appneta/hubot-reaction/issues"
   },
 
   "dependencies": {
