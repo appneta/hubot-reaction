@@ -18,6 +18,7 @@
 REACTIONS = JSON.parse process.env.HUBOT_REACTION_ENV
 
 module.exports = (robot) ->
-  for key, value of REACTIONS
-    robot.hear RegExp(key), (msg) ->
-      msg.send value
+  for phrase of REACTIONS
+    robot.hear RegExp(phrase), (msg) ->
+      key = msg.match[0]
+      msg.send REACTIONS[key]
